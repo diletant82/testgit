@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relTxt"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Egipat je prvi put otvorio za turiste 4300 staru grobnicu u Sahari, nedaleko od Gize. Iako je otkrivena još 1940, otvorena je tek sada posle temeljne restauracije i smatra se jednom od najlepših u Sahari.
+Grobica pripada periodu Šeste dinastije i stara je oko 4.300 godina, rekao je dr Haled al-Anani, egiptaski Ministar za starine.
+
+Veruje se da je u njoj bio sahranjen viši kraljevski službenik nazvan Mehu. Grobica, usečena u piramidi, ima uzan hodnik i šest prostorija. Tu su i pogrebne sobe za Mehuovog sina, Merena Ra, i unuka Heteba Kaa II.
+Zidovi su oslikani živopisnim scenama, među kojima je i venčanje dva krokodila.
+- Ima i crteža koji prvi put pokazuju neke detalje iz života starih Egipćana poput lova u džungli, ribolova žetve, kuvanja i akrobatskog plesa. Mehu je živeo tokom vladavine kralja Pepija (2332-2287. pre.n.e) i imao je 48 titula, saznali smo na osnovu natpisa na zidovima - dodao je Al-Anani.
+ Mehu je, između ostalog, bio vezir, šef sudijama i direktor palate."/>
+
+</RelativeLayout>
