@@ -39,10 +39,10 @@ public class Main2Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         img=findViewById(R.id.image);
-// amnlfgnkldfgnas;lgnl;fgndfklng
+
         mFab = findViewById(R.id.fab);
 
-
+//asgasgasdfgafsgasdfgasdgdsfgsdfgafgdfg
 
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
