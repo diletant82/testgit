@@ -38,7 +38,7 @@ public class Main2Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         img=findViewById(R.id.image);
-
+// amnlfgnkldfgnas;lgnl;fgndfklng
 
 
         Intent i=getIntent();
