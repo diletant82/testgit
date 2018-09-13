@@ -75,8 +75,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         call.enqueue(new Callback<List<Album>>() {
             @Override
             public void onResponse(Call<List<Album>> call, Response<List<Album>> response) {
+
                 generateDataList(response.body());
                 Log.d("test", "onResponse() called with: call = [" + call.request().url() );
+
 
             }
 

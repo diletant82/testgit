@@ -19,23 +19,31 @@
             android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:text="Enter Album Id: "
                />
             <EditText
+
                 android:inputType="number"
                 android:layout_width="150dp"
-                android:layout_height="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+
                 android:id="@+id/myEditText"
-                android:background="#000000" />
+                android:background="#ffffff" />
             <Button
                 android:id="@+id/find"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:text="Find"/>
         </LinearLayout>
 
+
     </android.support.v7.widget.Toolbar>
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler"
