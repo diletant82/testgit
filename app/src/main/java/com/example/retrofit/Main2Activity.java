@@ -26,6 +26,7 @@ import retrofit2.Response;
 public class Main2Activity extends AppCompatActivity {
 
     ImageView img;
+    FloatingActionButton mFab;
 
 
     Album a;
@@ -38,6 +39,16 @@ public class Main2Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         img=findViewById(R.id.image);
+        mFab = findViewById(R.id.fab);
+
+
+
+        mFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Main2Activity.this, "Cao Dule!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
