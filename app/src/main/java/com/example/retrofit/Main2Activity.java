@@ -27,7 +27,8 @@ public class Main2Activity extends AppCompatActivity {
 
     ImageView img;
     FloatingActionButton mFab;
-
+    TextView mTextContent;
+    TextView mTitle;
 
     Album a;
 
@@ -39,10 +40,13 @@ public class Main2Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         img=findViewById(R.id.image);
+        mTitle = findViewById(R.id.titlecard);
 
         mFab = findViewById(R.id.fab);
 
-//asgasgasdfgafsgasdfgasdgdsfgsdfgafgdfg
+
+
+        //asgasgasdfgafsgasdfgasdgdsfgsdfgafgdfg
 
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,8 +59,10 @@ public class Main2Activity extends AppCompatActivity {
 
         Intent i=getIntent();
         int id=i.getIntExtra("id",0);
+        final String title = i.getStringExtra("title");
         Log.d("test", "onCreate() called with: savedInstanceState = [" +id);
 
+        mTitle.setText(title);
 
         IEndpoint iEndpoint = RetrofitClientInstance.getRetrofitInstance().create(IEndpoint.class);
         Call<Album> call = iEndpoint.getAlbum(id);
@@ -72,7 +78,9 @@ public class Main2Activity extends AppCompatActivity {
                         .into(img);
 
 
+
             }
+
 
             @Override
             public void onFailure(Call<Album> call, Throwable t) {

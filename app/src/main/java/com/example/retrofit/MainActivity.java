@@ -76,8 +76,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onResponse(Call<List<Album>> call, Response<List<Album>> response) {
 
-                generateDataList(response.body());
                 Log.d("test", "onResponse() called with: call = [" + call.request().url() );
+
+                if(response.body() == null){
+                    generateDataList(response.body());
+                } else {
+                    Toast.makeText(MainActivity.this, "album does not exist", Toast.LENGTH_SHORT).show();
+                }
 
 
             }

@@ -49,6 +49,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyHolder> {
             public void onClick(View view) {
                 Intent i=new Intent(myContext, Main2Activity.class);
                 i.putExtra("id",album.getId());
+                i.putExtra("title", album.getTitle());
                 myContext.startActivity(i);
 
 
