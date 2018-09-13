@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="?attr/colorPrimary">>
+            >
 
             <ImageView
                 android:id="@+id/image"
@@ -34,7 +34,7 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
+                android:layout_height="56dp"
                 app:layout_collapseMode="pin"
 
                />
@@ -54,17 +54,25 @@
             xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="4dp"
+                android:layout_margin="8dp">
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Egipat je prvi put otvorio za turiste 4300 staru grobnicu u Sahari, nedaleko od Gize. Iako je otkrivena još 1940, otvorena je tek sada posle temeljne restauracije i smatra se jednom od najlepših u Sahari.
-Grobica pripada periodu Šeste dinastije i stara je oko 4.300 godina, rekao je dr Haled al-Anani, egiptaski Ministar za starine.
-
-Veruje se da je u njoj bio sahranjen viši kraljevski službenik nazvan Mehu. Grobica, usečena u piramidi, ima uzan hodnik i šest prostorija. Tu su i pogrebne sobe za Mehuovog sina, Merena Ra, i unuka Heteba Kaa II.
-Zidovi su oslikani živopisnim scenama, među kojima je i venčanje dva krokodila.
-- Ima i crteža koji prvi put pokazuju neke detalje iz života starih Egipćana poput lova u džungli, ribolova žetve, kuvanja i akrobatskog plesa. Mehu je živeo tokom vladavine kralja Pepija (2332-2287. pre.n.e) i imao je 48 titula, saznali smo na osnovu natpisa na zidovima - dodao je Al-Anani.
- Mehu je, između ostalog, bio vezir, šef sudijama i direktor palate."
+                android:layout_margin="8dp"
+                android:textSize="14sp"
+                android:text="Egipat je prvi put otvorio za turiste 4300 staru grobnicu u Sahari, nedaleko od Gize. Iako je otkrivena još 1940, otvorena je tek sada posle temeljne restauracije i smatra se jednom od najlepših u Sahari. Grobica pripada periodu Šeste dinastije i stara je oko 4.300 godina, rekao je dr Haled al-Anani, egiptaski Ministar za starine. Veruje se da je u njoj bio sahranjen viši kraljevski službenik nazvan Mehu. Grobica, usečena u piramidi, ima uzan hodnik i šest prostorija. Tu su i pogrebne sobe za Mehuovog sina, Merena Ra, i unuka Heteba Kaa II. Zidovi su oslikani živopisnim scenama, među kojima je i venčanje dva krokodila.
+                    - Ima i crteža koji prvi put pokazuju neke detalje iz života starih Egipćana poput lova u džungli, ribolova žetve, kuvanja i akrobatskog plesa. Mehu je živeo tokom vladavine kralja Pepija (2332-2287. pre.n.e) i imao je 48 titula, saznali smo na osnovu natpisa na zidovima - dodao je Al-Anani. Mehu je, između ostalog, bio vezir, šef sudijama i direktor palate."
                 />
+
+            </android.support.v7.widget.CardView>
 
         </RelativeLayout>
 
@@ -74,8 +82,10 @@ Zidovi su oslikani živopisnim scenama, među kojima je i venčanje dva krokodil
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         app:layout_anchor="@id/app_bar_layout"
         app:layout_anchorGravity="bottom|right|end"
-        style="@style/Widget.Design.FloatingActionButton"/>
+        style="@style/Widget.Design.FloatingActionButton"
+        android:src="@drawable/faceicon"/>
 
 </android.support.design.widget.CoordinatorLayout>

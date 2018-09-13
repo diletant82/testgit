@@ -47,7 +47,7 @@ public class Main2Activity extends AppCompatActivity {
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Main2Activity.this, "Cao Dule!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Main2Activity.this,  a.getTitle(), Toast.LENGTH_SHORT).show();
             }
         });
 
